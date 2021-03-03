@@ -1,4 +1,4 @@
-from ._pyo3_api import rust_func
+from ._pyo3_api import count
 
 
 class OsmPbf:
@@ -6,4 +6,4 @@ class OsmPbf:
         self.pbf_path = pbf_path
 
     def count(self):
-        return rust_func(self.pbf_path)
+        return count(self.pbf_path)
